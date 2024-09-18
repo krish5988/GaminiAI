@@ -1,0 +1,18 @@
+Scenario :
+system:SAP
+Automatic Creation of Customer Invoice (from Logistics)
+After the created billing is released to accounting, a respective accounts receivable invoice is automatically generated simultaneously. 
+The billing document generated during this process creates two different documents:
+1)A sales and distribution invoice (the bill)
+2)An account receivable invoice
+Let’s follow an example to see how this process is performed in the system. 
+To display a billing document, you can use Transaction VF03 or the application menu path Logistics > Sales and Distribution > Billing > Billing Document > Display.
+In the screen that appears, enter the billing document number, for example, “90000008”, and press the (Enter) key. You’ll arrive at the overview of the billing item, as shown below.
+Now you can display the document flow to see the sales and distribution invoice and the accounting invoice. To do so, choose More
+ • Environment > Display Document Flow.
+ To open the accounts receivable invoice document, select Accounting Document 9400000001 in the listed document flow, and then click on the Display Document button.
+In this example, this invoice isn’t cleared, as you can see in the Status field in the second figure above.
+The corresponding SAP Fiori app is called Display Billing Documents (F2250). It's visually and functionally the same as the SAP GUI transaction. However, there is a beautiful new app called Display Document Flow (F3665) for visualizing the document flow
+
+
+ 
